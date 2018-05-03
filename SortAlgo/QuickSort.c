@@ -25,7 +25,7 @@ int partition (int arr[], int low, int high)
     swap(&arr[i + 1], &arr[high]);
     return (i + 1);
 }
- 
+//quicksort recursive
 void quickSort(int arr[], int low, int high)
 {
     if (low < high)
@@ -36,7 +36,7 @@ void quickSort(int arr[], int low, int high)
         quickSort(arr, pi + 1, high);
     }
 }
- 
+//Print array
 void printArray(int arr[], int size)
 {
     int i;
@@ -45,7 +45,7 @@ void printArray(int arr[], int size)
     printf("\n");
 }
  
-
+//main program
 int main()
 {
 	clock_t begin, end;
@@ -64,7 +64,6 @@ int main()
 
 	int n=num; 
 	quickSort(arr, 0, n-1);
-	//printf("%d\n",num);
 	printf("Sorted array: \n");
 	printf("\n");
 	printArray(arr,num);
@@ -76,6 +75,7 @@ int main()
 	printf("Initial time taken by CPU: %d \n", begin  );
 	printf("End time taken by CPU: %d \n", end  );
 	printf("Total time taken by CPU: %f seconds\n", total_t  );	
-  	free(arr);
+
+	free(arr);
 	return 0;
 }
