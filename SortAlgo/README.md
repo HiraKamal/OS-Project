@@ -1,8 +1,14 @@
-#Comparison between threads and processes through sorting algorithm
+# Comparison between threads and processes through sorting algorithm
 
-##Description
+## Description
 This project is mainly to show the difference between threads and processes in
 terms of execution time.
+
+## Prerequiste
+- C language
+- Data Structures.
+- Basic understanding of process and threads.
+
 
 ## Installation
 1. Provide the input file.
@@ -17,9 +23,6 @@ second line the elements of the array for sorting are to be provided.
 3. The total time taken is also printed on console that is in seconds. 
 
 
-## Contributing
-
-
 ## History
 Threads were basically used to reduce the time taken by a program to execute. Threads 
 are capable of reducing the execution time when we are using multicore processsors.
@@ -28,7 +31,7 @@ is much more effective. As every thread makes its own PCB and stack so its takes
 time for execution.
 
 
-## Credits
+## Authors
 Muhammad Usama Nadeem
 Hira Kamal
 Maham Shoaib
